@@ -44,6 +44,8 @@ function checkRequired(inputArr) {
   return isRequired;
 }
 
+// Password match
+
 // Get fieldname
 function getFieldName(input) {
   return input.id.charAt(0).toUpperCase() + input.id.slice(1);
