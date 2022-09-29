@@ -70,6 +70,4 @@ function getFieldName(input) {
 // Event Handlers
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-
-  checkEmail(email);
 });
