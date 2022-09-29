@@ -29,6 +29,8 @@ function checkEmail(input) {
   }
 }
 
+// check require fields
+
 // Event Handlers
 form.addEventListener("submit", function (e) {
   e.preventDefault();
