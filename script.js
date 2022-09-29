@@ -52,6 +52,15 @@ function checkPasswordMatch(input1, input2) {
 }
 
 // check Input lenght
+function checkInputLenght(input, min, max) {
+  if (input.value.lenght < min) {
+    showError(`${getFieldName(input)} must be at least ${min} characters`);
+  } else if (input.value.lenght > max) {
+    showError(`${getFieldName(input)} must be less than ${max} characters`);
+  } else {
+    showSuccess(input);
+  }
+}
 
 // Get fieldname
 function getFieldName(input) {
