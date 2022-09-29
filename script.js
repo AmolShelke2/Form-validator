@@ -70,4 +70,11 @@ function getFieldName(input) {
 // Event Handlers
 form.addEventListener("submit", function (e) {
   e.preventDefault();
+
+  if (checkRequired([username, email, password, password2])) {
+    checkInputLenght(username, 3, 15);
+    checkInputLenght(password, 6, 25);
+    checkEmail(email);
+    checkPasswordMatch(password, password2);
+  }
 });
